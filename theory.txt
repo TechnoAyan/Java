@@ -1,0 +1,187 @@
+Advantage of OOPs over Procedure-oriented programming language:
+1)OOPs makes development and maintenance easier where as in Procedure-oriented programming language it is not easy to manage if code grows as project size grows. 
+2)OOPs provides data hiding whereas in Procedure-oriented prgramming language a global data can be accessed from anywhere. 
+3)OOPs provides ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.
+
+
+
+
+
+
+Can we overload main() method?
+Yes, by method overloading. You can have any number of main methods in a class by method overloading. Let's see the simple example: 
+class Simple
+{
+	public static void main(int a)
+	{
+		System.out.println(a);
+	}
+	public static void main(String args[])
+	{
+		System.out.println("main() method invoked");
+		main(10);
+	}
+}
+
+
+
+
+
+
+Can we execute a program without main() method?
+Yes, one of the way is static block but in previous version of JDK not in JDK 1.7. 
+class A
+{
+	static
+	{
+		System.out.println("static block is invoked");
+		System.exit(0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+Single Dimensional Array: Syntax to Declare an Array in java
+1.	dataType[] arrayRefVar; (or)  
+2.	dataType []arrayRefVar; (or)  
+3.	dataType arrayRefVar[];  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instantiation of an Array in java
+arrayRefVar=new datatype[size];  
+
+
+
+
+
+
+
+Example of single dimensional java array
+Let's see the simple example of java array, where we are going to declare, instantiate, initialize and traverse an array.
+class B
+{
+	public static void main(String args[])
+	{
+		int a[]=new int[5];//declaration and instantiation
+		a[0]=10;//initialization
+		a[1]=20;
+		a[2]=70;
+		a[3]=40;
+		a[4]=50;
+		//printing array
+		for(int i=0;i<a.length;i++) 								//length is the property of array
+			System.out.println(a[i]);
+	}
+}  
+
+
+
+Example to initantiate Multidimensional Array in java
+int[][] arr=new int[3][3];//3 row and 3 column  
+
+
+
+
+
+
+
+
+
+
+
+Example to initialize Multidimensional Array in java
+arr[0][0]=1;  
+arr[0][1]=2;  
+arr[0][2]=3;  
+arr[1][0]=4;  
+arr[1][1]=5;  
+arr[1][2]=6;  
+arr[2][0]=7;  
+arr[2][1]=8;  
+arr[2][2]=9;  
+
+
+
+
+
+
+
+
+
+
+Example of Multidimensional java array
+Let's see the simple example to declare, instantiate, initialize and print the 2Dimensional array.
+class B
+{
+	public static void main(String args[])
+	{
+		//declaring and initializing 2D array
+		int arr[][]={{1,2,3},{2,4,5},{4,4,5}};
+		//printing 2D array
+		for(int i=0;i<3;i++)
+		{
+			for(int j=0;j<3;j++)
+			{
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is difference between abstract class and interface?
+1.A class is called abstract when it contains at least one abstract method. It can also contain n numbers of concrete method. Interface can contain only abstract (none implemented) methods.
+2.The abstract class can have public, private, protect or default variables and also constants. In interface the variable is by default public final. In nutshell the interface doesn’t have any variables it only has constants.
+3.A class can extend only one abstract class but a class can implement multiple interfaces.
+
+
+
+
+
+
+
+
+
+
+
+
